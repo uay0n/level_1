@@ -41,3 +41,7 @@
 * class, id는 모든 태그에 두분없이 사용 가능!
 # git 
 * git clone 깃주소붙여넣기
+# <video src="동영상경로" 속성값></video>
+* 동영상 속성 autoplay, muted, controls, loop
+* autoplay > 동영상재생, muted > 음소거, contrils > 재생바, loop > 반복재생
+* src="절대경로?playlist=동영상이름&속성=값&속성=값&속성=값"

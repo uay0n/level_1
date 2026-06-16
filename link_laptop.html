@@ -79,25 +79,34 @@
                         <h2>혜택</h2>
                         <div class="benefit_content">
                             <p><em>1,629원</em> 적립 (WELCOME 0.1% 적립)</p>
-                            <a href="#">월 279,833원 (6개월) 무이자할부<img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="무이자할부설명"></a>
-                        </div>
+                            <a href="#" class="interest_free">월 279,833원 (6개월) 무이자할부<img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="무이자할부설명"></a>
+                            <!-- (위) 무이자할부 a 크릭 시 실행되는 영역 -->
+                            <div class="interest_free_installment_open">
+                                <h3>무이자 할부</h3>
+                                <p>.....</p>
+                            </div><!-- e:interest_free_installment_open -->
+                        </div><!-- e:benefit_content -->
                     </div><!-- e:benefit  -->
                     <!-- 배송 -->
                     <div class="delivery">
                         <h2>배송</h2>
-                        <div class="delivery_content">
-                            <p><em>무료배송</em></p>
-                            <div class="shipping_content">
-                                <span>16:00 까지 결제 시 <em>오늘 출발</em></span>
-                                <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/471/471662.png" alt="오늘출발설명"></a>
-                            </div><!-- e:shipping_content -->
-                            <p>일반택배</p>
-                            <p>제주도/도서산간 지역 8,000원</p>
+                        <div class="delivery_list">
+                            <em>무료배송</em>
+                            <span>16:00 까지 결제 시 
+                                <em>오늘 출발</em>
+                                <a href="#" class="today_info"><img src="https://cdn-icons-png.flaticon.com/128/471/471662.png" alt="오늘출발설명"></a>
+                                <!-- (위) a 클릭 시 실행되는 오늘 출발 정보 -->
+                                <span class="today_info_open">
+                                    <em>판매자가 '오늘출발'을 약속한 상품입니다.</em>
+                                </span><!-- e:today_info_open -->
+                            </span>
+                            <span>일반택배</span>
+                            <span>제주도/도서산간 지역 8,000원</span>
                         </div>
                     </div> <!-- e:delivery -->
                     <!-- 브랜드 -->
                     <div class="brand_info">
-                        <a href="#" class="brand_shift">
+                        <a href="#" class="brand_link"><!-- 브랜드바로가기 -->
                             <img src="https://cdn-icons-png.flaticon.com/128/1946/1946436.png" alt="판매자브랜드">
                             <span class="logo_lang">
                                 <span class="logo_name">
@@ -107,10 +116,23 @@
                                 <span>브랜드</span>
                             </span>
                         </a>
-                        <a href="#" class="bookmark"><img src="https://cdn-icons-png.flaticon.com/128/5662/5662990.png" alt="저장"></a>
                     </div>
-                </div>
+                    <div class="brand_info2"><!-- 선생님이 보여준 블록 라인 -->
+                        <a href="#" class="brand_link2">
+                            <p class="brand_logo"><img src="https://cdn-icons-png.flaticon.com/128/1946/1946436.png" alt="LG"></p>
+                            <div class="brand_name">
+                                <div class="brand">
+                                    <em>LG전자</em><img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="">
+                                </div>
+                                <p>브랜드</p>
+                            </div>
+                        </a>
+                        <a href="#" class="brand_favorite"><!-- 브랜드관심등록 -->
+                            <img src="https://cdn-icons-png.flaticon.com/128/5662/5662990.png" alt="관심브랜드등록">
+                        </a>
+                    </div>
             </div>
         </div>
     </div>
+</body> 
 </html>

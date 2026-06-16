@@ -45,3 +45,4 @@
 * 동영상 속성 autoplay, muted, controls, loop
 * autoplay > 동영상재생, muted > 음소거, contrils > 재생바, loop > 반복재생
 * src="절대경로?playlist=동영상이름&속성=값&속성=값&속성=값"
+* ctul+f> 전체적으로 바꾸는 단축키

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2565/2565434.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" class="top_btn">TOP</a><!-- 보통 TOP버튼은 main에 포함되는데 맨 위에 놔도됨 -->
+    <!-- 위로 같은 화면을 따라다니는 고정 요소는 body시작 후에 바로 쓰거나 main의 첫째 자식으로 작성하기 -->
+    <header>
+        <h1>삼립</h1>
+        <nav><!-- 시맨틱은 이미 의미가 있기 때문에 의미를 주기 위해선 ul에 붙인다. -->
+            <!-- nav 메인메뉴그룹으로만 쓰임 -->
+            <ul class="gnb"><!-- 사이트 최상단 내비게이션 , 어떤 페이지에 들어가도 고정되어있는 주 메뉴 -->
+                <li><a href="">회사소개</a>
+                    <ul class="lnb"><!-- 서브메뉴 안에 또다른 서브메뉴가 나올 시 주석을 또 따로 달아야함 -->
+                        <li><a href="Identity"></a></li>
+                        <li><a href="연혁"></a></li>
+                        <li><a href="BI"></a></li>
+                    </ul>
+                </li>
+                <li><a href="">지속가능</a></li>
+                <li><a href="">브랜드</a></li>
+                <li><a href="">삼립NOW</a><!-- 서브메뉴 작성을 위해 엔터 2번치는 위치 -->
+                    <ul class="lnb"><!-- gnb의 하단에 배치된 서브 메뉴, 중분류 메뉴 -->
+                        <li><a href="">삼립 스토리</a></li>
+                        <li><a href=""></a>미디어</li>
+                        <li><a href=""></a>보도자료</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul class="snb"><!-- 페이지 내에 좌/우측에 일반적으로 존재하는 추가 메뉴, 서브메뉴X -->
+            <li><a href="">인재채용</a></li>
+            <li><a href="">고객서비스</a></li>
+            <li><a href="">삼립몰</a></li>
+            <li><a href="">얌스토어</a></li>
+            <li><a href=""><img src="#" alt="검색"></a>
+                <div class="search_opne_box">통합검색</div>
+            </li>
+            <li><a href=""><img src="#" alt="언어변경"></a>
+                <ul class="lang_select">
+                    <li><a href="">English</a></li>
+                    <li><a href="">한국어</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <a href="#" class="top_btn">TOP</a><!-- main에 둘 때도 main에서 제일 위에-->
+        <!-- 삼립NOW > 보도자료 -->
+        <h1>보도자료</h1>
+        <div class="sequence_number">
+            <div class="sequence">
+                <a href="#" class="latest active">최신순</a>
+                <img src="#" alt="">
+                <a href="#" class="old">오래된순</a>
+            </div>
+            <p class="all_number">전체 343개</p>
+        </div>
+        <ul class="press_release">
+            <li><!-- 재시도 -->
+                <a href="#" class="thum"><img src="#" alt=""></a>
+                <div class="post">
+                    <a href="#" class="post_info">
+                        <h2>삼립 프로젝트:H, 피트니스 브랜드 F45 협업 프로틴 쿠키 출시</h2>
+                        <p class="day">2026년 6월 17일</p>
+                    </a>
+                    <a href="#" class="sub_categori">프로젝트H</a>
+                </div>
+            </li><!-- *5 -->
+        </ul>
+        <div class="page_number">
+            <a href="#" class="prev"><img src="#" alt="이전"></a>
+            <ol class="number"><!-- ol을 사용해도 되지만 보통 태그를 적게 쓰기 위해 div를 사용한다 -->
+                <li class="acive"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ol>
+            <a href="#" class="next"><img src="#" alt="다음"></a>
+        </div>
+    </main>
+    <footer>
+        <p class="slogan"><img src="#" alt="GOOD FOOD HAPPY LIFE"></p>
+        <ul class="gnb">
+            <li><h3>회사 소개</h3>
+                <ul class="lnb">
+                    <li><a href="#">Identity</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">BI</a></li>
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">삼립의 기술 </a></li>
+                    <li><a href="#">투자정보</a></li>
+                    <li><a href="#">컴플라이언스</a></li>
+                    <li><a href="#">위치</a></li>
+                </ul>
+            </li>
+            <li><h3>지속가능경영</h3>
+                <ul class="lnb">
+                    <li><a href="#">지속가능경영 체계</a></li>
+                    <li><a href="#">환경</a></li>
+                    <li><a href="#">사회</a></li>
+                    <li><a href="#">지배구조</a></li>
+                    <li><a href="#">보고서 및 정책</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                </ul>
+            </li>
+            <li><h3>브랜드</h3>
+                <ul class="lnb">
+                    <li><a href="#">삼립</a></li>
+                    <li><a href="#">베이커리</a></li>
+                    <li><a href="#">푸드</a></li>
+                    <li><a href="#">Store/온라인</a></li>
+                </ul>
+            </li>
+            <li><h3>삼립 Now</h3>
+                <ul class="lnb">
+                    <li><a href="#">삼립스토어</a></li>
+                    <li><a href="#">미디어</a></li>
+                    <li><a href="#">보도자료</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="notice_recruit">
+            <a href="#">공지사항</a>
+            <a href="#">인재채용<img src="#" alt=""></a>
+        </div>
+        <div class="foot_info">
+            <div class="f_left">
+                <a href="#">개인정보처리방침</a>
+                <p><img src="#" alt=""></p>
+                <a href="#">영상정보처리기기 운영관리방침</a>
+                <p><img src="#" alt=""></p>
+                <a href="#">거래희망회사 사전등록</a>
+            </div>
+            <div class="f_right">
+                <a href="#">삼립몰<img src="#" alt=""></a>
+                <a href="#">얌스토어<img src="#" alt=""></a>
+                <a href="#">고객서비스</a>
+            </div>
+        </div>
+        <address>
+            고객센터 전화번호 080-739-8572 (월~금 09:00~17:00)<br>101,Gongdan 1-daero, Siheung-si, Gyeonggi-do, Republic of Korea (주)삼립 대표이사 도세호, 정인호
+        </address>
+        <p class="copyright">&copy; Samlip. All rights reserved.</p>
+    </footer>
+</body>
+</html>
